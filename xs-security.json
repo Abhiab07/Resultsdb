@@ -1,0 +1,22 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.ResultsAdmin",
+      "description": "ResultsAdmin"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "ResultsAdmin",
+      "description": "Role for Administration of Results",
+      "scope-references": [
+        "$XSAPPNAME.ResultsAdmin"
+      ]
+    }
+  ],
+  "oauth2-configuration": {
+    "redirect-uris": ["https://*.cfapps.us10-001.hana.ondemand.com/**"]
+ }
+  
+}

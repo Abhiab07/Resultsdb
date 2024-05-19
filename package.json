@@ -1,0 +1,33 @@
+{
+  "name": "Resultsdb",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/postgres": "^1.8.0",
+    "@sap/cds": "^7",
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "mbt": "^1.2.27",
+    "passport": "^0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.120.10"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-result": "cds watch --open result/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "auth": "xsuaa"
+    }
+  },
+  "sapux": [
+    "app/result"
+  ]
+}
